@@ -10,6 +10,7 @@
 #container {
 	min-width: 375px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .header-address-text,
@@ -20,6 +21,16 @@
 }
 
 /*Header*/
+
+.menu-open-header {
+	background: #323264;
+	min-height: 322px;
+	width: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: width 0.5s ease;
+}
 
 .header-lang-contacts {
 	display: flex;
@@ -117,8 +128,72 @@ h1 {
 	content: "";
 	display: block;
 	width: 25px;
-	height: 3px;
+	height: 4px;
 	background: #000;
+}
+
+/*Menu open*/
+
+.menu-open .menu-open-header {
+	width: 100%;
+}
+
+.menu-open .burger-icon:before {
+	transform: translateY(7px) rotate(45deg)
+}
+
+.menu-open .burger-icon:after {
+	transform: translateY(-7px) rotate(-45deg);
+}
+
+.menu-open .burger-icon-inner {
+	display: none;
+}
+
+.menu-open .burger-icon:before,
+.menu-open .burger-icon:after {
+	background: #fff;
+}
+
+.menu-open .burger-icon,
+.menu-open .logo {
+	z-index: 10;
+}
+
+.menu-open .logo path {
+	fill: #fff;
+}
+
+.menu-open .logo path:first-child {
+	fill: #F0145A;
+}
+
+.menu-open .nav {
+	display: block;
+    height: 160px;
+    width: 104px;
+    position: absolute;
+    top: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-open .nav-items {
+	display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-open .nav-item-link {
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+}
+
+.menu-open .nav-item:hover .nav-item-link{
+	color: #F0145A;
 }
 
 /*Numbers*/
