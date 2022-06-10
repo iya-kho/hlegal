@@ -92,4 +92,27 @@
 		height: auto;
 	}
 
+
+
+
+	/*Contact*/ 
+
+	.contact-main {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contacts-wrap, .form {
+		width: 422px;
+		margin-top: 0;
+	}
+
+	.form-title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+	}
+
+
+
 }

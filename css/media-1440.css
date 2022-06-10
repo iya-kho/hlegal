@@ -35,6 +35,15 @@
 	}
 
 
+	/*Contact*/
+
+	.contact-main {
+		margin: 60px 180px;
+	}
+
+	.contacts-wrap, .form {
+		width: 510px;
+	}
 
 
 }
